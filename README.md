@@ -3,9 +3,9 @@ Hex maps offer more natural movement, better representation of distance, better 
 
 # Annotated 2D map using ggplot2 package
 
-![alt text](https://github.com/milos-agathon/create-crisp-topographic-maps-with-r/blob/main/japan-co2-emissions-2021-annotated.png?raw=true)
+![alt text](https://github.com/milos-agathon/hex-map-co2-emissions-with-r/blob/main/japan-co2-emissions-2021-annotated.png?raw=true)
 
 # Annotated 3D map using rayshader package
 
-![alt text](https://github.com/milos-agathon/create-crisp-topographic-maps-with-r/blob/main/japan-co2-emissions-2021-3d-text.png?raw=true)
+![alt text](https://github.com/milos-agathon/hex-map-co2-emissions-with-r/blob/main/japan-co2-emissions-2021-3d-text.png?raw=true)
 
