@@ -211,7 +211,24 @@ cols <- colorRampPalette(
     ))
 )
 
-# 8. HEX MAP IN GGPLOT2
+# 8. ANNOTATE OUR HEX MAP
+#------------------------
+
+install.packages("maps")
+library(maps)
+data(world.cities)
+head(world.cities)
+
+japan_cities <- world.cities |>
+    dplyr::filter(
+        country.etc == "Japan"
+    ) |>
+    dplyr::slice_max(
+        pop,
+        n = 10
+    )
+
+# 9. HEX MAP IN GGPLOT2
 #----------------------
 install.packages("ggrepel")
 library(ggrepel)
@@ -270,22 +287,6 @@ ggsave(
     width = 7, height = 7, dpi = 600, bg = "white", p
 )
 
-# 9. ANNOTATE OUR HEX MAP
-#------------------------
-
-install.packages("maps")
-library(maps)
-data(world.cities)
-head(world.cities)
-
-japan_cities <- world.cities |>
-    dplyr::filter(
-        country.etc == "Japan"
-    ) |>
-    dplyr::slice_max(
-        pop,
-        n = 10
-    )
 
 # 10. CO2 EMISSIONS 3D MAP
 #-------------------------
